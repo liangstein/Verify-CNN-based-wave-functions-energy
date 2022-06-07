@@ -4,9 +4,9 @@ The J1-J2 quantum spin model on the square lattice has strong frustrations. In t
 
 The newly emerged neural network based quantum wave-functions are promising tools for numerically solving the quantum many-body systems. Benchmarking the neural network ansatz on the J1-J2 model and the t-J model can demonstrate the strong state representation ability of neural networks, thus other quantum models can be solved in a easier fashion. Therefore, the authors in this work challenged the CNN-based wave-function on both models, and obtained faithful energy results. 
 
-To make the verification generic, the Python scripts can run on a CPU machine with the environments below:
-1, Python-3.6.15
-2, openmpi-3.1.6
+To make the verification generic, the Python scripts can run on a CPU machine with the environments below:\
+1, Python-3.6.15\
+2, openmpi-3.1.6\
 3, numpy-1.19.5, numba-0.31.1, scipy-1.5.4, torch-1.10, mpi4py-3.1.1
 
 In the file "fire.py", the string value of variable "Case" on line 20 determines the quantum model (J1J2 or tJ). On line 55, the number passing to the function "MC_sequence" is the sample number per MPI rank, multiplying this number to the MPI process number is then the total sample number. To run the sampling process, just:
