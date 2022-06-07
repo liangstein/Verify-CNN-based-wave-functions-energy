@@ -13,4 +13,4 @@ In the file "fire.py", the string value of variable "Case" on line 20 determines
 
 mpirun -np NPROC python fire.py
 
-After the sampling completes, the "energy" file reports the energy value for the quantum model evaluated. Because of the large neural network, MCMC may takes a long time without GPUs. For example, collecting 945 samples by one Xeon Silver 4215R takes two hours. 
+After the sampling completes, the "energy" file reports the energy value for the quantum model evaluated. Because of the large neural network, MCMC may takes a long time without GPUs. For example, collecting 945 samples by one Xeon Silver 4215R core takes two hours. 
